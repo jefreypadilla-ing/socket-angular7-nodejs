@@ -1,0 +1,13 @@
+<p>
+  order-register works!
+</p>
+
+ <button (click)='emitMessage()'>New Document</button>
+
+  <div *ngIf="orders">
+    <ul *ngFor="let order of orders.list" >
+      <li>{{ order.value }}</li>
+    </ul>
+  </div>
+
+
